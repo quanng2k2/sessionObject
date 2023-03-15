@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object</title>
+  </head>
+  <body>
+    <h3>Danh sách quản lý sinh viên</h3>
+    <div class="container">
+      <table>
+        <tr>
+          <td><label for="">ID :</label></td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <td>
+            <label for="">maSv:</label>
+          </td>
+          <td><input type="text" id="maSv" /></td>
+        </tr>
+
+        <tr>
+          <td><label for="">Tên:</label></td>
+          <td><input type="text" id="name" /></td>
+        </tr>
+        <tr>
+          <td><label for="">Giới Tính:</label></td>
+          <td>
+            <input type="radio" id="GioiTinh" name="fav_language" value="Nam" />
+            <label for="Nam">Nam</label><br />
+            <!-- <input type="radio" id="GioiTinh" name="fav_language" value="Nữ" />
+            <label for="Nữ">Nữ</label><br /> -->
+          </td>
+        </tr>
+        <tr>
+          <td><label for="">Quê Quán:</label></td>
+          <td><input type="text" id="QueQuan" /></td>
+        </tr>
+      </table>
+      <button onclick="addStudent()">Thêm</button>
+    </div>
+    <table style="margin-top: 20px" border="1px" id="table">
+      <tr>
+        <td>ID</td>
+        <td>maSv</td>
+        <td>Tên</td>
+        <td>Giới Tính</td>
+        <td>Quê Quán</td>
+        <td>Xóa</td>
+        <td>Sửa</td>
+      </tr>
+    </table>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
